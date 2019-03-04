@@ -1,6 +1,6 @@
 # My Portfolio
 This is an application that displays my skills,qualifications,education,training and experiences.
-<img src="/home/moringaschool/Pictures/Screenshot from 2019-02-06 14-46-57.png">
+<img src="/home/moringaschool/Pictures/Screenshot from 2019-03-04 16-26-13.png">
 # By Vinny Otach
 # User Stories
 As a user of the application i should be able:
