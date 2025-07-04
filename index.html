@@ -1,338 +1,87 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
-        crossorigin="anonymous">
-    <link href="css/styles.css" type="text/css" rel="stylesheet" />
-    <link rel="icon" href="img/cropped-favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Modern Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!--------------------------------------HEADER-------------------------------------->
-
-    <div class="container-fluid" id="main-header">
-        <div class="header-wrapper">
-            <a class="logo" href="#">My Portfolio</a>
-
-            <div class="mobile-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <nav>
-                <ul>
-                    <!--Main nav to navigate to different parts of the page-->
-                    <li><a id="about-link" href="#about">About</a></li>
-                    <li><a id="services-link" href="#services">Skills</a></li>
-                    <li><a id="portfolio-link" href="#portfolio">Projects</a></li>
-                    <li><a id="contact-link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle">🌙</button>
     </div>
+  </header>
 
-    <!--------------------------------------HERO IMAGE-------------------------------------->
-
-    <div id="hero" class="container-fluid">
-    <script src="particles.js"></script>
-        <div id="particles-js">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="hero-content">
-                        <img src="https://sociable.co/wp-content/uploads/2017/04/software-development.jpg">
-                        <h1 style="color:rgb(243, 78, 78);"> Vinny Otach</h1>
-                        <h2 style="color:rgb(243, 78, 78);">Full Stack Web Developer</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+  <section class="hero" id="about">
+    <div class="container">
+      <h2>Hello, I'm a Front-End Developer</h2>
+      <p>I build responsive, accessible, and modern websites using HTML, CSS, and JavaScript.</p>
+      <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
     </div>
+  </section>
 
-    <!--------------------------------------ABOUT SECTION-------------------------------------->
-
-    <div id="about" class="container-fluid" style="text-align:center;">
-        <div class="container">
-            <div class="row left-xs left-sm left-md left-lg">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="about-text">
-                        <h2><span class="accent-text">Hi am Vinny</span></h2>
-                        <p> And i am able to handle multiple tasks on a daily basis,i use a creative approach to solve problem and am always 
-                            energetic and eager to learn new skills,also i am a full stack developer with knowledge 
-                            from different languages and frameworks.
-                        </p>
-
-                    </div>
-                </div>
-                </div>
-            <div class="row right-xs right-sm right-md right-lg">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                    <div class="about-resume">
-                        <div class="skills">
-                            <div class="education">
-                                <!-- <h3>My Education</h3>
-                                <div class="education-block">
-                                    <h4>Moringa School</h4>
-                                    <p>Coding</p>
-                                </div> -->
-                            <h3 class="accent-text">Passions</h3>
-                            <div class="skill-progress-container">
-                                <p>Travelling</p>
-                            </div>
-
-                            <div class="skill-progress-container">
-                                <p>Socialising</p>
-                            </div>
-
-                            <div class="skill-progress-container">
-                                <p>Coding</p>
-                            </div>
-
-                            <div class="skill-progress-container">
-                                <p>Listening to music</p>
-                            </div>
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="image/port.jpg" alt="Project 1">
+          <h3>Project One</h3>
+          <p>Description of the project goes here. Tools used: HTML, CSS, JS.</p>
         </div>
+        <div class="project-card">
+          <img src="image/picture5.png" alt="Project 2">
+          <h3>Project Two</h3>
+          <p>Another short description. Tools used: Bootstrap, JS, APIs.</p>
+        </div>
+      </div>
     </div>
-</div>
+  </section>
 
-    <!--------------------------------------SKILLS SECTION-------------------------------------->
-
-    <div id="services" class="container-fluid" style="text-align:center">
-        <div class="container">
-            <div class="section-title">
-                <h1><span class="accent-text">My Skills</span></h1>
-            </div>
-
-            <div class="row center-xs center-sm center-md center-lg trigger">
-                <!--Row 1-->
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://strategisminc.com/wp-content/uploads/2017/05/python.jpg" alt="" class="icon img-responsive">
-                        <h3>Python</h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt=""  class="icon img-responsive">
-                        <h3>Javascript</h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://www.hindilearn.in/images1/html.png" alt=""  class="icon img-responsive">
-                        <h3>HTML & CSS</h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FA4_6e24biy8bp4ahrL-TNfaircI%3D%2F0x0%3A2040x1360%2F1200x800%2Ffilters%3Afocal(1287x538%3A1613x864)%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_image%2Fimage%2F63739082%2Fgit.0.jpg&f=1&nofb=1" alt=""  class="icon img-responsive">
-                        <h3>GIT</h3>
-                        <p></p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-ZXtzNwrf4xU%2FUgitZ3RGwuI%2FAAAAAAAAATA%2FaTcVldU658E%2Fs1600%2FCute%2BLogo%2Bof%2BAndroid%2BOperating%2BSystem.jpg&f=1&nofb=1" alt="" class="icon img-responsive">
-                        <h3>ANDROID</h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 hb vb">
-                    <div class="service-block">
-                        <img src="https://udemy-images.udemy.com/course/750x422/743174_8046_5.jpg" alt=""
-                         class="icon img-responsive">
-                        <h3>Sql</h3>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>Responsive Design</li>
+      </ul>
     </div>
-    <!--------------------------------------PROJECTS SECTION-------------------------------------->
+  </section>
 
-    <div class="container-fluid" id="portfolio">
-        <div class="section-title">
-            <h1><span class="accent-text">My Projects</span></h1>
-        </div>
-        <div class="content-wrapper">
-
-            <div class="news-card">
-                <a target="blank" href="https://github.com/vinnyotach7/Awards-Portal.git/" class="news-card__card-link"></a>
-                <img src="https://www.joburg.co.za/wp-content/uploads/2018/04/shutterstock_385641685.jpg" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">Awwards</h2>
-                    <div class="news-card__post-date"> 2019</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">This is an application where users can post their projects and other users can review them,vote,view their score&hellip;</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/Awards-Portal.git" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <a target="blank" href="https://github.com/vinnyotach7/Neighbour-Hood.git" class="news-card__card-link"></a>
-                <img src="https://faithwilsongroup.com/wp-content/uploads/sites/10/2015/07/South_van_4877_2200px.jpg" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">Neighborhood</h2>
-                    <div class="news-card__post-date">2018</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">this is an application that allows you to be in the loop about everything happening in your neighborhood&hellip;</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/Neighbour-Hood.git" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <a target="blank" href="https://github.com/vinnyotach7/insta-photo.git/" class="news-card__card-link"></a>
-                <img src="https://cdn.images.express.co.uk/img/dynamic/59/590x/Instagram-logo-1011468.jpg?r=1535748410906" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">Insta-Photo</h2>
-                    <div class="news-card__post-date">2018</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">InstaClone is a app where users can post pics, comment, like and follow their friends..&hellip;</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/insta-photo.git" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <a target="blank" href="https://github.com/vinnyotach7/highlights.git/" class="news-card__card-link"></a>
-                <img src="https://www.hawaiianavenueelementary.org/wp-content/uploads/2018/10/1234.png" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">Highlights</h2>
-                    <div class="news-card__post-date">2018</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">Python-News-Highlights is a Python news application which brings you all the news sources World wide and the top
-                        headlines. Clicking on the link provided under the news source will lead the user to the articles of the source. It
-                        achieves this by using the News API..</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/highlights.git" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <a target="blank" href="https://github.com/vinnyotach7/Git-2.git/" class="news-card__card-link"></a>
-                <img src="https://www.howtogeek.com/wp-content/uploads/2017/09/x1-github-explained.png.pagespeed.gp+jp+jw+pj+ws+js+rj+rp+rw+ri+cp+md.ic.7dSq--O2-A.png" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title">GithubSearch</h2>
-                    <div class="news-card__post-date">2018</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">This is a clone of github search page built using Angular&hellip;</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/Git-2.git/" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="news-card">
-                <a target="blank" href="https://pitch-blog.herokuapp.com/" class="news-card__card-link"></a>
-                <img src="https://answersafrica.com/wp-content/uploads/2016/07/7_blogging-e1484908296381-640x360.jpg" alt="" class="news-card__image">
-                <div class="news-card__text-wrapper">
-                    <h2 class="news-card__title"> Personal-Blog</h2>
-                    <div class="news-card__post-date">2018</div>
-                    <div class="news-card__details-wrapper">
-                        <p class="news-card__excerpt">This is a web application for adding up blogs and commenting on existing blogs.</p>
-                        <a target="blank" href="https://github.com/vinnyotach7/Personal-Blog.git" class="news-card__read-more">Read
-                            more <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:your@email.com">your@email.com</a></p>
     </div>
-    <!--------------------------------------CONTACT SECTION-------------------------------------->
+  </section>
 
-    <div id="contact" class="container-fluid" style="background-color:#edeeee;">
-        <div class="container">
-            <div class="section-title">
-                <h1><span class="accent-text">Contact Me</span></h1>
-            </div>
-
-            <div class="row contact-block">
-                <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-4 ">
-                            <i class="fas fa-mobile-alt"></i>
-                            <div class="contact-text">
-                                <p>Call</p>
-                                <p>+254706-086-682</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <i class="far fa-envelope"></i>
-                            <div class="contact-text">
-                                <p>Email</p>
-                                <p>vinnyotach7@gmail.com</p>
-                            </div>
-                        </div>
-
-                        <div class=" col-md-4">
-                            <i class="fas fa-location-arrow"></i>
-                            <div class="contact-text">
-                                <p>Address</p>
-                                <p>Nairobi, Kenya</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div id="contacts" class="container about-social" style="text-align:center;">
-            <li><a target="blank" href="https://github.com/vinnyotach7"><i class="fab fa-github" style="color:black;"></i></a></li>
-            <li><a target="blank" href="https://twitter.com/vinnyotach?lang=en"><i class="fab fa-twitter" style="color:blue;"></i></a></li>
-            <li><a target="blank" href="https://www.linkedin.com/in/vinnyotach-44076a123/"><i class="fab fa-linkedin-in"
-                        style="color:rgb(56, 56, 151);"></i></a></li>
-            <li><a target="blank" href="http://www.facebook.com"><i class="fab fa-facebook-f" style="color:rgb(3, 3, 146);"></i></a></li>
-            <li><a target="blank" href="http://www.googleplus.com"><i class="fab fa-google-plus-g" style="color:red;"></i></a></li>
-        </div>
+  <footer>
+    <div class="container">
+      <p>© 2025 Your Name. All rights reserved.</p>
     </div>
+  </footer>
 
-
-    <!--------------------------------------FOOTER SECTION-------------------------------------->
-    <footer style="height: 20vh;">
-        <p>Copyright &#169; 2022 . Vinny Otach</p>
-    </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
-    <script src="js/main.js"></script>
-
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.onclick = () => {
+      document.body.classList.toggle('dark-mode');
+    };
+  </script>
 </body>
-
 </html>
