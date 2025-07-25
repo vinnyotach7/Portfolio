@@ -74,7 +74,11 @@ body {
 .hero {
   text-align: center;
   padding: 4rem 0;
+  background: transparent; /* Add this */
+  position: relative;       /* Ensures it layers properly */
+  z-index: 1;               /* Make sure it stays above particles */
 }
+
 
 .hero h2 {
   font-size: 2.5rem;
