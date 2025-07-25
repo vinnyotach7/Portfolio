@@ -20,7 +20,7 @@ body.dark-mode {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--bg-color);
+  background: transparent; /* <== CHANGED */
   color: var(--text-color);
   line-height: 1.6;
 }
