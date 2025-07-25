@@ -143,3 +143,66 @@ footer {
   border-top: 1px solid #ccc;
   background: var(--bg-color);
 }
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.hero-content .highlight {
+  color: var(--accent-color);
+}
+
+.hero-content .subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn.primary {
+  background-color: var(--accent-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn.primary:hover {
+  background-color: #0056b3;
+}
+
+.btn.outline {
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.outline:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
